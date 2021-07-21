@@ -1,49 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript page</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Demo Freedm</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Freedm Fake</h1>
-    <img src="https://freedmportal.web.app/assets/images/Freedm%20png%20last.png"><br>
-    <a href="https://freedmportal.web.app">Register Here</a><br><br>
-    <p1>Book Appointments</p1>
+    <h1>Freedm Fake</h1><br>
+    <a href="https://freedmportal.web.app">Book a doctor near you</a>
+    <img src="https://freedmportal.web.app/assets/images/Freedm%20png%20last.png">
+    <b>
+        <p>Book Appointments</p>
+    </b>
     <ul>
         <li>OPD</li>
         <li>Video Consultation</li>
         <li>Audio Consultation</li>
         <li>Chat with Docs</li>
-    </ul>
+    </ul><br><br><br>
+    <form aciton="/myaction.php" name="myForm" onsubmit="return validateForm()" method="post">
+        <div class="formdesign" id="fname">
+            First Name: <input type="text" name="fname" required><b><span class="formerror"> </span></b>
+        </div>
 
-    <form action="index.html" name='myForm' onsubmit='return validateForm()' method="GET">
-        <div class='formdesign' id="formerror">
-            First Name: <input type="text" name='fname' required><span class='formerror'></span><br><br>
+        <div class="formdesign" id="lname">
+            Last Name: <input type="text" name="lname" required><b><span class="formerror"> </span></b>
         </div>
-        <div classs='formdesign' id='formerror'>
-            Last Name: <input type="text" name='lname' required><span class='formerror'></span><br><br>
+
+        <div class="formdesign" id="sex">
+            <label for="orientation">Sex:</label>
+            <select name="sex" id="sex">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="lgbtq">LGBTQ</option>
+            </select>
         </div>
-        <div class='formdesign' id='formerror'>
-            Age: <input name='uage' type="number" required><span class='formerror'></span><br><br>
+
+        <div class="formdesign" id="email">
+            Email: <input type="email" name="femail" required><b><span class="formerror"> </span></b>
         </div>
-        <div class='formdesign' id='formerror'>
-            Sex: <input type="text" name='sex' required><span class='formerror'></span><br><br>
+
+        <div class="formdesign" id="phone">
+            Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
         </div>
-        <div class='formdesign' id='formerror'>
-            Contact Number: <input name='unumber' type="text" required><span class='formerror'></span><br><br>
+
+        <div class="formdesign" id="pass">
+            Password: <input type="password" name="fpass" required><b><span class="formerror"></span></b>
         </div>
-        <div class='formdesign' id='formerror'>
-            Email: <input name='email' type="email" required><span class='formerror'></span><br><br>
+
+        <div class="formdesign" id="cpass">
+            Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
         </div>
-        <input class='but' type='submit' value="Submit">
+
+        <input class="but" type="submit" value="Submit">
+
     </form>
 
-    <script src='script.js'></script>
 </body>
+<script src="script.js"></script>
 
 </html>
