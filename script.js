@@ -65,3 +65,35 @@ function validateForm(){
 
     return returnval;
 }
+
+var submit = document.getElementById('submit');
+submit.addEventListener('click', displayDetails);
+
+var row = 1;
+
+function displayDetails() {
+    var fname = document.getElementById('fname').value;
+    var lname = document.getElementById('lname').value;
+    var email = document.getElementById('email').value;
+    var pnumber = document.getElementById('phone').value;
+    var password = document.getElementById('pass').value;
+
+    var submit = document.getElementById9('submit');
+    var newRow = display.insertrow (row);
+
+    var cell1 = newRow.insertCell(0);
+    var cell2 = newRow.insertCell(1);
+    var cell3 = newRow.insertCell(2);
+    var cell4 = newRow.insertCell(3);
+    var cell5 = newRow.insertCell(4);
+
+    cell1.innerHTML = "fname";
+    cell2.innerHTML = "lname";
+    cell3.innerHTML = "email";
+    cell4.innerHTML = "pnumber";
+    cell5.innerHTML = "password";
+
+    row++;
+}
+    
+
