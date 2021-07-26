@@ -5,13 +5,17 @@
     <title>Demo Freedm</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
+<img src="images/logo_project.png" id='logo'>
+<h1 id="heading">Freedm</h1>
 <body>
-    <h1>Freedm Fake</h1><br>
-    <a href="https://freedmportal.web.app">Book a doctor near you</a>
-    <img src="https://freedmportal.web.app/assets/images/Freedm%20png%20last.png">
+    <div id='body1'>
+        <div id="login" class="headers"><h1>Login / Register</h1></div>
+    </div>
+    <div id='body2'>
+        <img src="https://freedmportal.web.app/assets/images/Freedm%20png%20last.png" id="banner">
+    </div><br><br>
     <b>
-        <p>Book Appointments</p>
+        <a href="https://freedmportal.web.app" id="link">Book a doctor near you</a>
     </b>
     <ul>
         <li>OPD</li>
@@ -42,7 +46,7 @@
         </div>
 
         <div class="formdesign" id="phone">
-            Phone: <input type="phone" name="fphone" required><b><span class="formerror"></span></b>
+            Phone: <input type="number" name="fphone" required><b><span class="formerror"></span></b>
         </div>
 
         <div class="formdesign" id="pass">
@@ -53,21 +57,18 @@
             Confirm Password: <input type="password" name="fcpass" required><b><span class="formerror"></span></b>
         </div>
 
-        <input id= "submit" class="but" type="submit" value="Submit">
+        <input id="submit" class="but" type="submit" value="Submit">
 
     </form>
-    <table id="User details">
-        <tr>
-            <th>fname</th>
-            <th>lname</th>
-            <th>email</th>
-            <th>pnumber</th>
-            <th>Password</th>
-        </tr>
-    </table>
-    <h2></h2>
-    <a href="page2.html">Next page</a>
 
+    <a href="page2.html" class="pages">Next page</a>
+
+    <footer class="footer">
+        <div>
+            <h5>About Us</h5>
+            <h5>Contact Us</h5>
+        </div>
+   </footer>
 </body>
 <script src="script.js"></script>
 

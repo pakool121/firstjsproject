@@ -1,0 +1,16 @@
+header {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding: 50px;
+    border: lightblue;
+    background-image: url('https://allhdwallpapers.com/wp-content/uploads/2015/05/Landscape-9.jpg');
+    ;
+}
+
+h1{
+    text-align: right;
+}
+body{
+    background-image: url('https://jooinn.com/images/gray-pattern-texture-4.png');
+}
